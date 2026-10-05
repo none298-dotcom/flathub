@@ -26,8 +26,8 @@ modules:
       - install -Dm644 "prompt-petal/lib/Prompt Petal.png" /app/share/icons/hicolor/512x512/apps/com.promptpetal.PromptPetal.png
     sources:
       - type: archive
-        url: https://promptpetal.com/downloads/Prompt-Petal-1.4.0-45-linux-x86_64.tar.gz
-        sha256: bd47a2c9cbeb1b5a675f64914c8724bf577d87f4a7f408ed04de7854120f6162
+        url: https://promptpetal.com/downloads/Prompt-Petal-1.4.0-46-linux-x86_64.tar.gz
+        sha256: 57290af15e410a53373ed4d7c46589abf734e3d8b3f2b50a0fa73b067b4e0983
         dest: prompt-petal
       - type: file
         path: com.promptpetal.PromptPetal.desktop
