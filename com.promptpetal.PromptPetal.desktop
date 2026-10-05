@@ -1,0 +1,16 @@
+[Desktop Entry]
+Type=Application
+Name=Prompt Petal
+GenericName=AI prompt launcher
+Comment=Your most used AI instructions, one click away.
+Exec=prompt-petal
+Icon=com.promptpetal.PromptPetal
+Terminal=false
+Categories=Utility;
+Keywords=AI;prompt;prompts;clipboard;
+StartupWMClass=com-promptpetal-desktop-MainKt
+Actions=open;
+
+[Desktop Action open]
+Name=Open your petals
+Exec=prompt-petal --open
