@@ -1,0 +1,38 @@
+# Flathub manifest. The archive is the Linux app folder tarred by the installers repo's
+# linux-release workflow; each release updates the URL and sha256.
+app-id: com.thelongviewapp.TheLongView
+# GNOME's runtime, because it carries WebKitGTK, which the checkout window needs
+# (linux/checkout/checkout.c).
+runtime: org.gnome.Platform
+runtime-version: '47'
+sdk: org.gnome.Sdk
+command: the-long-view
+finish-args:
+  - --share=ipc
+  - --share=network
+  - --socket=x11
+  - --device=dri
+  - --talk-name=org.freedesktop.Notifications
+  - --talk-name=org.kde.StatusNotifierWatcher
+modules:
+  - name: the-long-view
+    buildsystem: simple
+    build-commands:
+      - mkdir -p /app/lib/the-long-view /app/bin
+      - cp -a the-long-view/. /app/lib/the-long-view/
+      - ln -s "/app/lib/the-long-view/bin/The Long View" /app/bin/the-long-view
+      - install -Dm644 com.thelongviewapp.TheLongView.desktop /app/share/applications/com.thelongviewapp.TheLongView.desktop
+      - install -Dm644 com.thelongviewapp.TheLongView.metainfo.xml /app/share/metainfo/com.thelongviewapp.TheLongView.metainfo.xml
+      - install -Dm644 icon.png /app/share/icons/hicolor/512x512/apps/com.thelongviewapp.TheLongView.png
+    sources:
+      - type: archive
+        url: https://github.com/none298-dotcom/thelongview-installers/releases/download/linux-1.4.25/the-long-view-1.4.25-x86_64.tar.gz
+        sha256: 7d0af9edc4a506f8b661d5327b0a5dbc1704fe55550af5f95bccc15c7ee2afcc
+        dest: the-long-view
+      - type: file
+        path: com.thelongviewapp.TheLongView.desktop
+      - type: file
+        path: com.thelongviewapp.TheLongView.metainfo.xml
+      - type: file
+        path: icon.png
+        dest-filename: icon.png

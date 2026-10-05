@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=The Long View
+Comment=See the years of life you win back by quitting smoking
+Exec=the-long-view
+Icon=com.thelongviewapp.TheLongView
+Categories=Utility;
+Keywords=quit;smoking;cigarettes;health;tracker;
+StartupWMClass=The Long View

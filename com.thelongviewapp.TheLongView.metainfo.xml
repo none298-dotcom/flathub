@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.thelongviewapp.TheLongView</id>
+  <name>The Long View</name>
+  <summary>See the years of life you win back by quitting smoking</summary>
+  <developer id="com.thelongviewapp">
+    <name>Little Bird Trading LLC</name>
+  </developer>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>LicenseRef-proprietary</project_license>
+  <url type="homepage">https://thelongviewapp.com</url>
+  <url type="help">https://thelongviewapp.com/contact</url>
+  <url type="privacy">https://thelongviewapp.com/privacy</url>
+  <launchable type="desktop-id">com.thelongviewapp.TheLongView.desktop</launchable>
+  <content_rating type="oars-1.1"/>
+  <description>
+    <p>Enter your age, how long you have smoked and how much. The Long View shows the time smoking
+    has likely cost you, and how much of it comes back the longer you stay smoke free.</p>
+    <p>Log each day in a few seconds. A lapse costs real time, and it never erases the healing that
+    already happened. A daily reminder comes at the time you pick.</p>
+    <p>The forecast, daily check-ins and your whole history are free. Premium adds the quit plan,
+    money saved, sync across your devices, the recovery timeline and export.</p>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://thelongviewapp.com/assets/app/linux-today.png</image>
+      <caption>Today: the time you are winning back</caption>
+    </screenshot>
+  </screenshots>
+  <releases>
+    <release version="1.4.25" date="2026-10-05"/>
+  </releases>
+</component>
