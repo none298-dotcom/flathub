@@ -1,7 +1,7 @@
 app-id: com.promptpetal.PromptPetal
-runtime: org.freedesktop.Platform
-runtime-version: '24.08'
-sdk: org.freedesktop.Sdk
+runtime: org.gnome.Platform
+runtime-version: '48'  # GNOME: carries WebKitGTK 4.1 for the AI sign in windows
+sdk: org.gnome.Sdk
 command: prompt-petal
 finish-args:
   - --share=ipc
@@ -26,8 +26,8 @@ modules:
       - install -Dm644 "prompt-petal/lib/Prompt Petal.png" /app/share/icons/hicolor/512x512/apps/com.promptpetal.PromptPetal.png
     sources:
       - type: archive
-        url: https://promptpetal.com/downloads/Prompt-Petal-1.3.0-44-linux-x86_64.tar.gz
-        sha256: d6b12cc7b81165fed09590a9ce89f13ff04584690b838713c48ff1746e6a68b0
+        url: https://promptpetal.com/downloads/Prompt-Petal-1.4.0-45-linux-x86_64.tar.gz
+        sha256: bd47a2c9cbeb1b5a675f64914c8724bf577d87f4a7f408ed04de7854120f6162
         dest: prompt-petal
       - type: file
         path: com.promptpetal.PromptPetal.desktop
