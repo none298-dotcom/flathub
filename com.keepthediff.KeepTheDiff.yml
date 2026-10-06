@@ -25,8 +25,8 @@ modules:
     sources:
       - type: archive
         # Set at release: https://dl.keepthediff.com/linux/<sha>/keep-the-diff-<version>-linux-x86_64.tar.gz
-        url: https://dl.keepthediff.com/linux/5e6884c1d839b3a8eac0b3135dd695f362a82f97/keep-the-diff-1.2.8-linux-x86_64.tar.gz
-        sha256: e3b3ccd3a3daaa075e9f34f2ad8d0970b7d67d12df5ccaf797eec272f60cbe61
+        url: https://dl.keepthediff.com/linux/603fa59d22c56139e98cab12f0229d160375fef2/keep-the-diff-1.2.9-linux-x86_64.tar.gz
+        sha256: 3799615b9cd5d2ad5981a7a2ebd73d842f328ee4c51a3b1561220440f0c2574a
         dest: keep-the-diff
         strip-components: 1
       - type: file
